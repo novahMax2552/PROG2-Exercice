@@ -10,8 +10,7 @@ public abstract class Person {
     protected String email;
     protected String telephone;
 
-    public Person(int id, String nom, String prenom, LocalDate dateNaissance,
-                  String email, String telephone) {
+    public Person(int id, String nom, String prenom, LocalDate dateNaissance, String email, String telephone) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -20,17 +19,38 @@ public abstract class Person {
         this.telephone = telephone;
     }
 
-    public int getId() { return id; }
-    public String getNom() { return nom; }
-    public String getPrenom() { return prenom; }
-    public LocalDate getDateNaissance() { return dateNaissance; }
-    public String getEmail() { return email; }
-    public String getTelephone() { return telephone; }
+    public int getId(){ 
+        return id; 
+    }
 
-    public void setNom(String nom) { this.nom = nom; }
-    public void setPrenom(String prenom) { this.prenom = prenom; }
-    public void setDateNaissance(LocalDate dateNaissance) { this.dateNaissance = dateNaissance; }
-    public void setEmail(String email) { this.email = email; }
-    public void setTelephone(String telephone) { this.telephone = telephone; }
+    public String getNom() { 
+        return nom; 
+    }
+    public String getPrenom() { 
+        return prenom; 
+    }
+    public LocalDate getDateNaissance() { 
+        return dateNaissance; 
+    }
+    public String getEmail() { 
+        return email; }
+    public String getTelephone() { return telephone; 
+    }
+
+    public void setNom(String nom) { 
+        this.nom = nom; 
+    }
+    public void setPrenom(String prenom) { 
+        this.prenom = prenom; 
+    }
+    public void setDateNaissance(LocalDate dateNaissance) { 
+        this.dateNaissance = dateNaissance; 
+    }
+    public void setEmail(String email) { 
+        this.email = email; 
+    }
+    public void setTelephone(String telephone) { 
+        this.telephone = telephone; 
+    }
 }
 
